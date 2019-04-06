@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat')*/
+
+/*CSS modification for navbar*/
+.nav-extended {
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content-wrapper {
+  padding-top: 75px;
+}
+
+.nav-wrapper a{
+	font-family: "Open Sans";
+	color: #D41318;
+	height: auto;
+	width:;
+	font-size: 18px;
+}
+
+.nav-wrapper .brand-logo{
+	font-family: "Open Sans";
+	color: #D41318;
+	font-size: 36px;
+}
+
+/*CSS for landing page and */
+
+.landing {
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	min-height: 60vh;
+}
+
+.text {
+	flex-grow: 2.5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-right: 10px;
+	justify-content: center;
+}
+
+.title {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 36px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.body-text {
+	font-weight: 200;
+	font-size: 18px;
+	text-align: center;
+	color: #9e9e9e;
+}
+
+.avatar {
+	flex-grow: 1;
+	background-color: #ECF0F1;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.landing-avatar {
+	height: 35vh;
+	width: auto;
+	max-height: 200px;
+}
+
+.landing-image {
+	width: 100%;
+	height: auto
+}
+
+/*
+color Pallete
+
+Light:
+FD686C
+EB3C41
+;
+
+
+Medium:
+#D41318;
+
+
+Dark:
+AB0509
+840003;
+
+*/
