@@ -86,6 +86,17 @@
 	height: auto
 }
 
+.introduction {
+	background-color: #AB0509;
+	padding: 30vh 20vw 30vh 20vw;
+}
+
+.projects {
+	margin: 45px 4vw;
+	border-radius: 14px;
+	padding: 10px 1vw;
+}
+
 /*
 color Pallete
 
