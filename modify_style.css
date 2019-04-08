@@ -25,11 +25,11 @@ body {
 .nav-wrapper a{
 	font-family: "Open Sans";
 	color: #D09AFF;
-	font-size: 18px;
+	font-size: 20px;
+	height: 100%
 }
 
 .nav-wrapper .brand-logo{
-	padding-top: 0.2vh;
 	font-family: "Open Sans";
 	color: #D09AFF;
 	font-size: 3vh;
@@ -38,11 +38,10 @@ body {
 nav.nav-extended .nav-wrapper {
 	min-height: 4vh;
 	max-height: 100px;
-
+	padding-top: 0.8vh
 }
 
 #mobile-demo {
-	font-size: 2.5vh;
 	max-width: 60vw;
 
 }
@@ -53,7 +52,7 @@ nav.nav-extended .nav-wrapper {
 .sidenav .purp-font {
 	font-family: "Open Sans";
 	color: #D09AFF;
-	font-size: 2.5vh;
+	font-size: 2vh;
 	font-weight: 100;
 	padding: 0.5vh 0.1vw;
 	text-align: center;
@@ -98,6 +97,7 @@ nav.nav-extended .nav-wrapper {
 }
 
 .body-text {
+	font-family: 'Montserrat';
 	font-weight: 200;
 	font-size: 2vh;
 	text-align: center;
@@ -126,11 +126,11 @@ nav.nav-extended .nav-wrapper {
 	background-color: #00bfa2;
 	padding: 20vh 20vw 20vh 20vw;
 	width: 100%;
-	min-height: 60vh;
+	min-height: 70vh;
 }
 
 .project-wrapper {
-	padding-top: 50px;
+	padding-top: 80px;
 }
 
 
@@ -143,28 +143,29 @@ nav.nav-extended .nav-wrapper {
 	align-content: space-around;
 	padding-top: 20px;
 	padding-bottom: 50px;
-	padding-left: 5vw;
-	padding-right: 5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 
 .cus-card {
-	margin: 30px;
-	min-width: 300px;
-	width: 35vw;
-	max-width: 500px;
-	height: 300px;
+	width: 60vw;
+	height: 30vw;
+	max-width: 600px;
+	max-height: 300px;
+	min-height:140px; 
+	min-width:280px;
   	display: flex;
   	flex-direction: column;
   	justify-content: flex-start;
   	overflow: hidden;
-  	margin: 1vh 4vw;
+  	margin: 1vw 1vw;
   	border-radius: 20px;
 }
 
 .hover-sec {
-	max-width: 500px;
-	max-height: 220px;
+	max-width: 100%;
+	max-height: 100%;
   	position: relative;
   	display: flex;
   	justify-content: center;
@@ -175,16 +176,14 @@ nav.nav-extended .nav-wrapper {
   	display: block;
 
 	flex-shrink: 0;
-	min-height: 100%;
-	max-width:100%;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
 
 .hidden-content {
 	/*to fill the card space*/
-	min-width: 100%;
-	min-height: 100%;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -193,35 +192,41 @@ nav.nav-extended .nav-wrapper {
 	text-align: center;
 	transition: .5s ease;
 	opacity: 0;
-	background-color: rgba(212,19,24,0.55);
-
+	background-color: #2c2c2c;
+	color: #bc70ff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .hover-sec:hover .image-card {
-	opacity: 0.3;
+	opacity: 0;
 }
 
 .hover-sec:hover .hidden-content {
 	opacity: 1;
 }
 
-.text-card {
-	position: absolute;
-	top: 50%;
-	left: -0.3%;
-	flex-grow: 2.5;
+
+.hidden-text {
+	flex-grow: 1.5;
 	width: 100%;
-  	color: white;
-  	font-weight: 500;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0.5vh 0.5vw 1vh 0.5vw;
+	line-height: 130%;
 }
 
 .card-modal {
 	flex-grow: 1;
 }
-
 .card-modal a {
-	width: 100%;
-	height: 100%;
+
+	width: 70%;
 }
 
 .modal-text {
@@ -233,13 +238,27 @@ nav.nav-extended .nav-wrapper {
 	font-weight: 500;
 }
  .btn {
- 	background-color: #bc70ff;
+ 	background-color: transparent;
+ 	border: 1px solid #bc70ff;
+ 	color: #bc70ff;
+ 	border-radius: 30px;
  }
  .btn:hover {
- 	background-color: #D09AFF;
+ 	background-color: transparent;
  }
  .btn:focus {
  	background-color: #D09AFF;
+ }
+
+ .modal-title {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 3vh;
+ } 
+ .modal-content {
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 2vh;
  }
 
 
@@ -285,6 +304,8 @@ input, textarea{
 
 #submit-btn {
 	background-color: #00BFA5; 
+	border: none;
+	color: white;
 }
 #submit-btn:hover {
 	background-color: #4FCFBD; 
