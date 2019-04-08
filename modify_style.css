@@ -148,7 +148,6 @@ nav.nav-extended .nav-wrapper {
 .cus-card {
 	margin: 30px;
 	width: 80vw;
-
 	max-width: 400px;
 	height: 300px;
   	display: flex;
@@ -230,7 +229,7 @@ nav.nav-extended .nav-wrapper {
 .modal-text {
 	padding:5px 10px; 
 	color: white;
-	font-size: 1.6vh;
+	font-size: 24px;
 	line-height: 130%;
 	word-wrap: normal;
 	font-weight: 500;
