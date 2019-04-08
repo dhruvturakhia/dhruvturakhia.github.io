@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /*@import url('https://fonts.googleapis.com/css?family=Montserrat')*/
-
+body {
+	margin: 0px;
+	padding-bottom: 0px;
+}
 /*CSS modification for navbar*/
 .nav-extended {
 	padding-left: 10px;
 	padding-bottom: 5px;
-}
 
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -16,46 +19,68 @@
 
 .content-wrapper {
   padding-top: 75px;
+  max-width: 100%;
 }
 
 .nav-wrapper a{
 	font-family: "Open Sans";
-	color: #D41318;
-	height: auto;
+	color: #D09AFF;
 	font-size: 18px;
 }
 
 .nav-wrapper .brand-logo{
+	padding-top: 0.2vh;
 	font-family: "Open Sans";
-	color: #D41318;
-	font-size: 36px;
+	color: #D09AFF;
+	font-size: 3vh;
+}
+
+nav.nav-extended .nav-wrapper {
+	min-height: 4vh;
+	max-height: 100px;
+
 }
 
 #mobile-demo {
-	font-size: 12px;
+	font-size: 2.5vh;
 	max-width: 60vw;
+
+}
+.sidenav {
+	width: 60vw;
 }
 
-.sidenav .red-font {
+.sidenav .purp-font {
 	font-family: "Open Sans";
-	color: #D41318;
-	font-size: 16px;
+	color: #D09AFF;
+	font-size: 2.5vh;
+	font-weight: 100;
+	padding: 0.5vh 0.1vw;
+	text-align: center;
+	height: 5vh; 
+	vertical-align: baseline;
+	padding-top: 25px;
+
 }
+
+ nav i.material-icons {
+ 	font-size: 3vh;
+ }
 
 /*CSS for landing page and */
 
 .landing {
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	min-height: 60vh;
+	min-height: 70vh;
 }
 
 .text {
-	flex-grow: 2.5;
+	flex-grow: 2;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -67,14 +92,14 @@
 .title {
 	font-family: 'Montserrat';
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 4vh;
 	margin-bottom: 20px;
 	text-align: center;
 }
 
 .body-text {
 	font-weight: 200;
-	font-size: 18px;
+	font-size: 2vh;
 	text-align: center;
 }
 
@@ -87,19 +112,21 @@
 }
 
 .landing-avatar {
-	height: 35vh;
-	width: auto;
-	max-height: 200px;
+	max-height: 35vh;
+	max-width: 100vw;
 }
 
 .landing-image {
-	width: 100%;
-	height: auto
+	max-height: 400px;
+	width: auto;
 }
 
 .introduction {
-	background-color: #AB0509;
-	padding: 30vh 20vw 30vh 20vw;
+	flex-grow: 1;
+	background-color: #00bfa2;
+	padding: 20vh 20vw 20vh 20vw;
+	width: 100%;
+	min-height: 600px;
 }
 
 .projects {
@@ -120,6 +147,8 @@
 
 .cus-card {
 	margin: 30px;
+	width: 80vw;
+
 	max-width: 400px;
 	height: 300px;
   	display: flex;
@@ -131,6 +160,7 @@
 }
 
 .hover-sec {
+	width: 400px;
 	max-width: 400px;
 	max-height: 220px;
   	position: relative;
@@ -140,12 +170,13 @@
 
 .image-card {
 	opacity: 1;
+  	display: block;
+
 	flex-shrink: 0;
-	max-height: 100%;
-	min-width:100%;
+	min-height: 100%;
+	max-width:100%;
 	transition: .3s ease;
 	backface-visibility: hidden;
-	position: static;
 }
 
 .hidden-content {
@@ -153,16 +184,19 @@
 	min-width: 100%;
 	min-height: 100%;
 	position: absolute;
-
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 	transition: .3s ease;
 	opacity: 0;
 	background-color: rgba(212,19,24,0.55);
 	/*To center the div*/
 
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
-
-	z-index: 2;
+	z-index: 2;*/
 
 }
 
@@ -196,21 +230,21 @@
 .modal-text {
 	padding:5px 10px; 
 	color: white;
-	font-size: 14px;
+	font-size: 1.6vh;
 	line-height: 130%;
 	word-wrap: normal;
 	font-weight: 500;
 }
+ .btn {
+ 	background-color: #bc70ff;
+ }
+ .btn:hover {
+ 	background-color: #D09AFF;
+ }
+ .btn:focus {
+ 	background-color: #D09AFF;
+ }
 
-.btn {
-	background-color: #AB0509; 
-}
-.btn:hover {
-	background-color: #FD686C; 
-}
-.btn:focusclick {
-	background-color: #FD686C; 
-}
 
 .skills-wrapper {
 	padding: 5vw 5vw;
@@ -227,7 +261,7 @@
 	font-weight: 500;
 	padding: 5px 5px;
 	height: 50px;
-	width: 110px;
+	min-width: 110px;
 	margin: 5px;
 	border-radius: 8px;
 	color: white;
@@ -245,11 +279,21 @@
 	flex-direction: column;
 	justify-content: center;
 	background-color: #2C2C2C;
-	color: #FD686C;
+	color: #00bfa2;
 }
 
 input, textarea{
-    color: #FD686C;
+    color: #00bfa2;
+}
+
+#submit-btn {
+	background-color: #AB0509; 
+}
+#submit-btn:hover {
+	background-color: #FD686C; 
+}
+#submit-btn:focus {
+	background-color: #FD686C; 
 }
 
 
