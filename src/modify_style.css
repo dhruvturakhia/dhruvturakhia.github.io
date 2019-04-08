@@ -61,6 +61,7 @@
 	align-items: center;
 	padding: 0px 10px;
 	justify-content: center;
+	max-width: 100%;
 }
 
 .title {
@@ -202,10 +203,12 @@
 	font-weight: 500;
 }
 
-.modal {
-	border-radius: 
+.btn {
+	background-color: #AB0509; 
 }
-
+.btn:hover {
+	background-color: #FD686C; 
+}
 .skills-wrapper {
 	padding: 5vw 5vw;
 	display:flex;

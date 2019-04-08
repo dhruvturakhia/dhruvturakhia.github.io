@@ -73,6 +73,9 @@ textContent = projects.title;
 
 project_elements = document.querySelectorAll("div.cus-card");
 
+document.querySelectorAll("div.introduction div.title")[0]
+
+
 for (var i = 0; i < project_elements.length; i++) {
 	project_elements[i].childNodes[1].childNodes[1].
 		setAttribute("src", projects.info[i].img_src);
@@ -96,13 +99,13 @@ skill_elements = document.querySelectorAll("div.skill");
  	skill_elements[i].textContent = skills[i];
  	switch (i%3) {
  		case 0:
- 			skill_elements[i].style.backgroundColor = "#53047F"
+ 			skill_elements[i].style.backgroundColor = "#FD686C"
  			break;
  		case 1:
- 			skill_elements[i].style.backgroundColor = "#890ACF"
+ 			skill_elements[i].style.backgroundColor = "#D41318"
  			break;
  		case 2:
- 			skill_elements[i].style.backgroundColor = "#AB57D9"
+ 			skill_elements[i].style.backgroundColor = "#AB0509"
  			break;
  	}
  }
