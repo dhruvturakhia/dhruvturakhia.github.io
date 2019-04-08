@@ -11,9 +11,10 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
-.sticky + .content-wrapper {
+.content-wrapper {
   padding-top: 75px;
 }
 
@@ -21,7 +22,6 @@
 	font-family: "Open Sans";
 	color: #D41318;
 	height: auto;
-	width:;
 	font-size: 18px;
 }
 
@@ -29,6 +29,17 @@
 	font-family: "Open Sans";
 	color: #D41318;
 	font-size: 36px;
+}
+
+#mobile-demo {
+	font-size: 12px;
+	max-width: 60vw;
+}
+
+.sidenav .red-font {
+	font-family: "Open Sans";
+	color: #D41318;
+	font-size: 16px;
 }
 
 /*CSS for landing page and */
@@ -48,7 +59,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-right: 10px;
+	padding: 0px 10px;
 	justify-content: center;
 }
 
@@ -92,15 +103,134 @@
 }
 
 .projects {
-	margin: 45px 4vw;
-	border-radius: 14px;
-	padding: 10px 1vw;
+	margin-top: 50px;
 }
-/*Use css grid ^-^*/
-.card-image {
-	max-width: 40vw;
-	height: auto;
+
+
+
+.card-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
+
+
+.cus-card {
+	margin: 30px;
+	max-width: 400px;
+	height: 300px;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	overflow: hidden;
+  	margin: 20px 20px;
+  	border-radius: 20px;
+}
+
+.hover-sec {
+	max-width: 400px;
+	max-height: 220px;
+  	position: relative;
+  	display: flex;
+  	justify-content: center;
+}
+
+.image-card {
+	opacity: 1;
+	flex-shrink: 0;
+	max-height: 100%;
+	min-width:100%;
+	transition: .3s ease;
+	backface-visibility: hidden;
+	position: static;
+}
+
+.hidden-content {
+	/*to fill the card space*/
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+
+	transition: .3s ease;
+	opacity: 0;
+	background-color: rgba(212,19,24,0.55);
+	/*To center the div*/
+
+	display: flex;
+	flex-direction: column;
+
+	z-index: 2;
+
+}
+
+.hover-sec:hover .image-card {
+	opacity: 0.3;
+}
+
+.hover-sec:hover .hidden-content {
+	opacity: 1;
+}
+
+.text-card {
+	position: absolute;
+	top: 50%;
+	left: -0.3%;
+	flex-grow: 2;
+	width: 100%;
+  	color: white;
+  	font-weight: 500;
+}
+
+.card-modal {
+	flex-grow: 1;
+}
+
+.card-modal a {
+	width: 100%;
+	height: 100%;
+}
+
+.modal-text {
+	padding:5px 10px; 
+	color: white;
+	font-size: 14px;
+	line-height: 130%;
+	word-wrap: normal;
+	font-weight: 500;
+}
+
+.modal {
+	border-radius: 
+}
+
+.skills-wrapper {
+	padding: 5vw 5vw;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-between;  
+}
+.skill {
+	font-style: "Open Sans";
+	font-size: 24px;
+	font-weight: 500;
+	padding: 5px 5px;
+	height: 50px;
+	width: 110px;
+	margin: 5px;
+	border-radius: 8px;
+	color: white;
+	text-align: center;
+	border
+}
+.skill:hover {
+	opacity: 0.6;
+	cursor: default;	
+};
 
 /*
 color Pallete
