@@ -209,13 +209,18 @@
 .btn:hover {
 	background-color: #FD686C; 
 }
+.btn:focusclick {
+	background-color: #FD686C; 
+}
+
 .skills-wrapper {
 	padding: 5vw 5vw;
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	align-content: space-between;  
+	align-content: space-between; 
+	background-color: #2C2C2C; 
 }
 .skill {
 	font-style: "Open Sans";
@@ -228,12 +233,26 @@
 	border-radius: 8px;
 	color: white;
 	text-align: center;
-	border
 }
 .skill:hover {
 	opacity: 0.6;
 	cursor: default;	
-};
+}
+
+.contact-me{
+	padding: 50px;
+	padding-bottom: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #2C2C2C;
+	color: #FD686C;
+}
+
+input, textarea{
+    color: #FD686C;
+}
+
 
 /*
 color Pallete

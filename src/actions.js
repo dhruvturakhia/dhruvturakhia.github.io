@@ -1,5 +1,5 @@
 var intro = {
-	title: "Yo mofu",
+	title: "Yo!",
 	body: "This is the body of\
 	my Greeting lorem blah blah blah",
 };
@@ -47,10 +47,12 @@ var projects = {
 	],
 };
 
+var project_elements = document.querySelectorAll("div.cus-card");
+
 
 var skills = ["HTML", "CSS", "JS",
 "React", "Postgres", "Node", "Mongo", "Python", 
-"AWS", "Docker", "Redis"]
+"AWS", "Docker"]
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -71,7 +73,6 @@ textContent = intro.body;
 document.querySelectorAll("div.projects div.title")[0].
 textContent = projects.title;
 
-project_elements = document.querySelectorAll("div.cus-card");
 
 document.querySelectorAll("div.introduction div.title")[0]
 
@@ -109,3 +110,14 @@ skill_elements = document.querySelectorAll("div.skill");
  			break;
  	}
  }
+
+document.getElementById("submit-btn").addEventListener("click", () => {
+	var name = document.getElementById("name");
+	var email = document.getElementById("email");
+	var message = document.getElementById("message");
+	console.log(name.value, email.value, message.value);
+	name.value = "";
+	email.value = "";
+	message.value = "";
+	alert("Details submitted");
+});
