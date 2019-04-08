@@ -100,13 +100,13 @@ skill_elements = document.querySelectorAll("div.skill");
  	skill_elements[i].textContent = skills[i];
  	switch (i%3) {
  		case 0:
- 			skill_elements[i].style.backgroundColor = "#FD686C"
+ 			skill_elements[i].style.backgroundColor = "#4FCFBD"
  			break;
  		case 1:
- 			skill_elements[i].style.backgroundColor = "#D41318"
+ 			skill_elements[i].style.backgroundColor = "#00BFA5"
  			break;
  		case 2:
- 			skill_elements[i].style.backgroundColor = "#AB0509"
+ 			skill_elements[i].style.backgroundColor = "#007363"
  			break;
  	}
  }

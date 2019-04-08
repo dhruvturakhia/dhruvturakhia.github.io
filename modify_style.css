@@ -126,11 +126,11 @@ nav.nav-extended .nav-wrapper {
 	background-color: #00bfa2;
 	padding: 20vh 20vw 20vh 20vw;
 	width: 100%;
-	min-height: 600px;
+	min-height: 60vh;
 }
 
-.projects {
-	margin-top: 50px;
+.project-wrapper {
+	padding-top: 50px;
 }
 
 
@@ -140,27 +140,30 @@ nav.nav-extended .nav-wrapper {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-content: space-around;
 	padding-top: 20px;
 	padding-bottom: 50px;
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 
 
 .cus-card {
 	margin: 30px;
-	width: 80vw;
-	max-width: 400px;
+	min-width: 300px;
+	width: 35vw;
+	max-width: 500px;
 	height: 300px;
   	display: flex;
   	flex-direction: column;
   	justify-content: flex-start;
   	overflow: hidden;
-  	margin: 20px 20px;
+  	margin: 1vh 4vw;
   	border-radius: 20px;
 }
 
 .hover-sec {
-	width: 400px;
-	max-width: 400px;
+	max-width: 500px;
 	max-height: 220px;
   	position: relative;
   	display: flex;
@@ -174,7 +177,7 @@ nav.nav-extended .nav-wrapper {
 	flex-shrink: 0;
 	min-height: 100%;
 	max-width:100%;
-	transition: .3s ease;
+	transition: .5s ease;
 	backface-visibility: hidden;
 }
 
@@ -188,14 +191,9 @@ nav.nav-extended .nav-wrapper {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
-	transition: .3s ease;
+	transition: .5s ease;
 	opacity: 0;
 	background-color: rgba(212,19,24,0.55);
-	/*To center the div*/
-
-	/*display: flex;
-	flex-direction: column;
-	z-index: 2;*/
 
 }
 
@@ -211,7 +209,7 @@ nav.nav-extended .nav-wrapper {
 	position: absolute;
 	top: 50%;
 	left: -0.3%;
-	flex-grow: 2;
+	flex-grow: 2.5;
 	width: 100%;
   	color: white;
   	font-weight: 500;
@@ -286,13 +284,13 @@ input, textarea{
 }
 
 #submit-btn {
-	background-color: #AB0509; 
+	background-color: #00BFA5; 
 }
 #submit-btn:hover {
-	background-color: #FD686C; 
+	background-color: #4FCFBD; 
 }
 #submit-btn:focus {
-	background-color: #FD686C; 
+	background-color: #4FCFBD; 
 }
 
 
