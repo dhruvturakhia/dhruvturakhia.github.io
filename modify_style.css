@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-/*@import url('https://fonts.googleapis.com/css?family=Montserrat')*/
+
+
+/*
+To-do change the card fonts accordingly:
+button : 24px;
+text: 20px;
+
+*/
+
 body {
 	margin: 0px;
 	padding-bottom: 0px;
@@ -313,23 +321,3 @@ input, textarea{
 #submit-btn:focus {
 	background-color: #4FCFBD; 
 }
-
-
-/*
-color Pallete
-
-Light:
-FD686C
-EB3C41
-;
-
-
-Medium:
-#D41318;
-
-
-Dark:
-AB0509
-840003;
-
-*/
