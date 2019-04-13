@@ -19,7 +19,7 @@ var projects = {
 	info: [
 	{
 		img_src: "./images/facial-detection-min.jpg",
-		skill_txt: "React, Node, Express, Postgre",
+		skill_txt: "React, Node, Express, Postgres",
 		name: "Face Detection Web Application",
 		desc_detailed: "A web-app to help you \
 			detect faces in an image and keep a track \
