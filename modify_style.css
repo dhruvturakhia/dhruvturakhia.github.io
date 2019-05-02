@@ -40,7 +40,7 @@ body {
 .nav-wrapper .brand-logo{
 	font-family: "Open Sans";
 	color: #D09AFF;
-	font-size: 3vh;
+	font-size: 24px;
 }
 
 nav.nav-extended .nav-wrapper {
@@ -60,9 +60,8 @@ nav.nav-extended .nav-wrapper {
 .sidenav .purp-font {
 	font-family: "Open Sans";
 	color: #D09AFF;
-	font-size: 2vh;
+	font-size: 18px;
 	font-weight: 100;
-	padding: 0.5vh 0.1vw;
 	text-align: center;
 	height: 5vh; 
 	vertical-align: baseline;
@@ -71,7 +70,7 @@ nav.nav-extended .nav-wrapper {
 }
 
  nav i.material-icons {
- 	font-size: 3vh;
+ 	font-size: 24px;
  }
 
 /*CSS for landing page and */
@@ -99,7 +98,7 @@ nav.nav-extended .nav-wrapper {
 .title {
 	font-family: 'Montserrat';
 	font-weight: 600;
-	font-size: 4vh;
+	font-size: 26px;
 	margin-bottom: 20px;
 	text-align: center;
 }
@@ -107,7 +106,7 @@ nav.nav-extended .nav-wrapper {
 .body-text {
 	font-family: 'Montserrat';
 	font-weight: 200;
-	font-size: 2vh;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -221,13 +220,14 @@ nav.nav-extended .nav-wrapper {
 	width: 100%;
 	font-family: 'Montserrat';
 	font-weight: 200;
-	font-size: 2.5vh;
+	font-size: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 0.5vh 1vw 3vh 1vw;
 	line-height: 130%;
 }
+
 
 .card-modal {
 	flex-grow: 1;
@@ -239,7 +239,7 @@ nav.nav-extended .nav-wrapper {
 .modal-text {
 	text-align: center;
 	height: 100%;
-	font-size:2vh;
+	font-size:18px;
 	line-height: 130%;
 	word-wrap: normal;
 	font-weight: 500;
@@ -262,12 +262,12 @@ nav.nav-extended .nav-wrapper {
  .modal-title {
 	font-family: 'Montserrat';
 	font-weight: 600;
-	font-size: 3vh;
+	font-size: 24px;
  } 
  .modal-content {
 	font-family: 'Montserrat';
 	font-weight: 100;
-	font-size: 2vh;
+	font-size: 16px;
  }
 
  .bold {
@@ -326,4 +326,30 @@ input, textarea{
 }
 #submit-btn:focus {
 	background-color: #4FCFBD; 
+}
+
+@media only screen and (max-width: 768px) {
+	.title {
+		font-size: 24px;
+	}
+	.body-text {
+		font-size: 14px;
+	}
+	.cus-card {
+		width: 90vw;
+		height: 45vw;
+	}
+	.hidden-text {
+		font-size: 24px;
+	}
+	.modal-text {
+		font-size: 18px;
+	}
+	.modal-title {
+		font-size: 16px;
+	}
+	.modal-content {
+		font-size: 14px;
+	}
+
 }
