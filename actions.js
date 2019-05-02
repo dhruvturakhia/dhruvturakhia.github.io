@@ -1,4 +1,4 @@
-var intro = {
+const intro = {
 	title: "Hey! I am Dhruv, Nice to meet you.",
 	body: "My journey to software began in my \
 		freshman year when I got to work on robots \
@@ -14,7 +14,7 @@ var intro = {
 		solve problems and take challenges head on.",
 };
 
-var projects = {
+const projects = {
 	title: "My Projects",
 	info: [
 	{
@@ -95,17 +95,20 @@ var projects = {
 	],
 };
 
+const mail_id = "dhruvturakhia36@gmail.com"
+
+
 var project_cards = document.querySelectorAll("div.cus-card");
 
 var card_modals = document.querySelectorAll("div.modal");
 
-var skills = ["HTML", "CSS", "JS",
-"React", "Postgres", "Node", "Mongo", "Python", 
-"AWS", "Docker"]
+// var skill_elements = document.querySelectorAll("div.skill");
 
-var skill_elements = document.querySelectorAll("div.skill");
-
-
+function copy_to_clipboard() {
+	navigator.clipboard.writeText(mail_id).then(function() {
+	});
+	M.toast({html: "copied mail id to clipboard", displayLength: 1500})
+};
 
 document.addEventListener('DOMContentLoaded', function() {
     var elem_modal = document.querySelectorAll('.modal');
@@ -147,29 +150,3 @@ for (var i = 0; i < card_modals.length; i++) {
 	card_modals[i].childNodes[1].childNodes[5].
 		textContent = "Skills: " + projects.info[i].skill_txt;
 }
-
- for (var i = 0; i < skill_elements.length; i++) {
- 	skill_elements[i].textContent = skills[i];
- 	switch (i%3) {
- 		case 0:
- 			skill_elements[i].style.backgroundColor = "#4FCFBD"
- 			break;
- 		case 1:
- 			skill_elements[i].style.backgroundColor = "#00BFA5"
- 			break;
- 		case 2:
- 			skill_elements[i].style.backgroundColor = "#007363"
- 			break;
- 	}
- }
-
-document.getElementById("submit-btn").addEventListener("click", () => {
-	var name = document.getElementById("name");
-	var email = document.getElementById("email");
-	var message = document.getElementById("message");
-	console.log(name.value, email.value, message.value);
-	name.value = "";
-	email.value = "";
-	message.value = "";
-	alert("Details submitted");
-});

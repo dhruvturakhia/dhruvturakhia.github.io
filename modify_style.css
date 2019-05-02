@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
-/*
-To-do change the card fonts accordingly:
-button : 24px;
-text: 20px;
-
-*/
-
 body {
 	margin: 0px;
 	padding-bottom: 0px;
@@ -50,22 +43,24 @@ nav.nav-extended .nav-wrapper {
 }
 
 #mobile-demo {
-	max-width: 60vw;
+	width: 40vw;
+	background-color: #ECF0F1;
+	max-width: 300px;
 
 }
-.sidenav {
-	width: 60vw;
-}
+/*.sidenav {
+	width: 40vw;
+	max-width: 200px;
+}*/
 
 .sidenav .purp-font {
 	font-family: "Open Sans";
 	color: #D09AFF;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 100;
 	text-align: center;
 	height: 5vh; 
 	vertical-align: baseline;
-	padding-top: 25px;
 
 }
 
@@ -312,23 +307,36 @@ nav.nav-extended .nav-wrapper {
 	color: #00bfa2;
 }
 
-input, textarea{
-    color: #00bfa2;
+.contact-info {
+	padding: 20px 20px;
+	display: flex;
+	justify-content: center
 }
 
-#submit-btn {
-	background-color: #00BFA5; 
-	border: none;
-	color: white;
+.logo-wrapper {
+	margin: 5px 25px;
 }
-#submit-btn:hover {
-	background-color: #4FCFBD; 
+.logo-wrapper:hover{
+	opacity: 0.6;
 }
-#submit-btn:focus {
-	background-color: #4FCFBD; 
+.contact-logo{
+	cursor: pointer;
+	width: 64px;
+}
+.mail-icon {
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
+	#mobile-demo {
+		width: 60vw;
+		max-width: 300px;
+	
+	}
+	.sidenav .purp-font {
+		padding-top:1vh;
+		height: 9vh;
+	}
 	.title {
 		font-size: 24px;
 	}
@@ -350,6 +358,10 @@ input, textarea{
 	}
 	.modal-content {
 		font-size: 14px;
+	}
+	.contact-logo{
+		width: 48px;
+		height: 48px;
 	}
 
 }
